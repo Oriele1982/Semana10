@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Caso practico 2</title>
+	<link rel="stylesheet" href="">
+	<style>
+		#box{
+			width: 200px;
+			height: 200px;
+			background-color: gold;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+	<script>
+		
+		//element.style.backgroundColor = 'black';
+
+
+		var myBox = {
+			element: document.getElementById('box') ,
+			paintRed : function() {this.paint('red')} ,
+			paintBlue : function() {this.element.style.backgroundColor = 'blue'},
+			paint: function(color) {this.element.style.backgroundColor = color}
+		}
+		myBox.paintRed();
+	
+
+	</script>
+	
+</body>
+</html>
